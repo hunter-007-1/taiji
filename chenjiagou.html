@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>陈家沟发源地</title>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --accent-color: #3498db;
+        --text-color: #333;
+      }
+
+      body {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      body::after {
+        content: "";
+        background: url("https://img.tukuppt.com/ad_preview/01/15/74/61a814f1c1939.jpg!/fw/780")
+          center/cover no-repeat fixed;
+        opacity: 0.3; /* 可按需调整透明度 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 确保背景在内容下方 */
+      }
+
+      body {
+        font-family: "Segoe UI", "微软雅黑", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: rotate(360deg);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      nav {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 64px;
+        z-index: 99;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .nav-links a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-color);
+        background: rgba(52, 152, 219, 0.1);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-color);
+        transition: width 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .content {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        object-position: center 30%;
+        transition: transform 0.3s ease;
+      }
+
+      .hero-image:hover {
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 0 1rem;
+        }
+
+        .hero-image {
+          height: 300px;
+        }
+
+        .logo {
+          display: none;
+        }
+      }
+      /* 新增专属样式 */
+      .content-section {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .heritage-layout {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+      }
+
+      .stone-monument {
+        flex: 1;
+        min-width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .description {
+        flex: 2;
+        line-height: 1.8;
+      }
+
+      .highlight {
+        color: var(--accent-color);
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        .heritage-layout {
+          flex-direction: column;
+        }
+
+        .stone-monument {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://wimg.588ku.com/gif/21/09/01/a941b5685138b66c0f9e7fa9d7fa1a4d.gif"
+        alt="太极标志"
+        class="logo"
+      />
+      <h1 style="text-align: center; flex: 1">太极文化传承</h1>
+    </header>
+
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="overview.html">概述</a>
+        <a href="origin.html">起源和发展</a>
+        <a href="chenjiagou.html" class="active">陈家沟</a>
+        <a href="value.html">文化价值</a>
+        <a href="effect.html">功效与作用</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="content-section">
+        <h2>太极拳发源地 - 陈家沟</h2>
+        <div class="heritage-layout">
+          <img
+            src="https://tse3-mm.cn.bing.net/th/id/OIP-C.e0WS-DSew6_Q8TKUC4KksgHaE8?rs=1&pid=ImgDetMain"
+            alt="太极拳发源地石碑"
+            class="stone-monument"
+          />
+
+          <div class="description">
+            <p>
+              <a
+                href="https://baike.baidu.com/item/%E9%99%88%E5%AE%B6%E6%B2%9F/1285749"
+                >陈家沟</a
+              >
+              ，又称陈沟，位于河南省焦作市温县赵堡镇，地处城东5公里处的清风岭中段。
+            </p>
+
+            <h3>文化旅游区</h3>
+            <p>
+              陈家沟太极拳文化旅游区规划面积达<span class="highlight"
+                >21平方公里</span
+              >，核心景区为国家4A级旅游景区，包含：
+            </p>
+            <ul>
+              <li>太极拳纪念馆</li>
+              <li>传统武术馆</li>
+              <li>太极文化体验中心</li>
+            </ul>
+
+            <h3>武术馆风采</h3>
+            <p>
+              在享誉国内外的陈家沟武术馆，可一览当代太极拳师风采。展馆内设有：
+            </p>
+            <ul>
+              <li>太极拳名家事迹展板</li>
+              <li>历代宗师文物陈列</li>
+              <li>实时武术教学演示</li>
+            </ul>
+
+            <h3>太极大师</h3>
+            <p>著名传承人包括：</p>
+            <ul>
+              <li>
+                <a
+                  href="https://baike.baidu.com/item/%E9%99%88%E5%B0%8F%E6%97%BA/1231796"
+                  >陈小旺</a
+                >（多次全国太极拳冠军）
+              </li>
+              <li>
+                <a
+                  href="https://baike.baidu.com/item/%E9%99%88%E6%AD%A3%E9%9B%B7?fromModule=lemma_search-box"
+                  >陈正雷</a
+                >（全国武术十大名师）
+              </li>
+              <li>
+                <a
+                  href="https://baike.baidu.com/item/%E7%8E%8B%E8%A5%BF%E5%AE%89/1231490"
+                  >王西安</a
+                >、<a
+                  href="https://baike.baidu.com/item/%E6%9C%B1%E5%A4%A9%E6%89%8D/1694111"
+                  >朱天才</a
+                >（"四大金钢"成员）
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

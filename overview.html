@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太极拳概述</title>
+    <!-- 复制主页的样式 -->
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --accent-color: #3498db;
+        --text-color: #333;
+      }
+
+      body {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      body::after {
+        content: "";
+        background: url("https://img.tukuppt.com/ad_preview/01/15/74/61a814f1c1939.jpg!/fw/780")
+          center/cover no-repeat fixed;
+        opacity: 0.3; /* 可按需调整透明度 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 确保背景在内容下方 */
+      }
+
+      body {
+        font-family: "Segoe UI", "微软雅黑", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: rotate(360deg);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      nav {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 64px;
+        z-index: 99;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .nav-links a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-color);
+        background: rgba(52, 152, 219, 0.1);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-color);
+        transition: width 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .content {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        object-position: center 30%;
+        transition: transform 0.3s ease;
+      }
+
+      .hero-image:hover {
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 0 1rem;
+        }
+
+        .hero-image {
+          height: 300px;
+        }
+
+        .logo {
+          display: none;
+        }
+      }
+
+      /* 新增概述页专属样式 */
+      .content-section {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .taiji-image {
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://wimg.588ku.com/gif/21/09/01/a941b5685138b66c0f9e7fa9d7fa1a4d.gif"
+        alt="太极标志"
+        class="logo"
+      />
+      <h1 style="text-align: center; flex: 1">太极文化传承</h1>
+    </header>
+
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="overview.html" class="active">概述</a>
+        <a href="origin.html">起源和发展</a>
+        <a href="chenjiagou.html">陈家沟</a>
+        <a href="value.html">文化价值</a>
+        <a href="effect.html">功效与作用</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="content-section">
+        <h2>
+          <a
+            href="https://baike.baidu.com/item/%E5%A4%AA%E6%9E%81%E6%8B%B3/84009"
+            >太极拳概述</a
+          >
+        </h2>
+        <img
+          src="https://tse4-mm.cn.bing.net/th/id/OIP-C.26fVWob0z559SQdAFavwLgHaE8?rs=1&pid=ImgDetMain"
+          alt="太极拳演示"
+          class="taiji-image"
+        />
+        <article>
+          <p>
+            太极拳是基于阴阳循环、天人合一的中国传统哲学思想和养生观念，以中正圆活为运动特征的传统体育实践。该遗产项目注重意念修炼与呼吸调整，以五步、八法为核心动作，以套路、功法、推手为运动形式。太极拳练习者通过对动静、快慢、虚实的把控，达到修身养性的目的。
+          </p>
+
+          <h3>历史传承</h3>
+          <p>
+            自17世纪中叶在温县陈家沟村形成以来，太极拳世代传承，在陈氏太极拳的基础上发展出以其他姓氏或姓名命名的多个流派。现有80多套拳术、器械套路和20多种推手方法，其文化意义和社会功能不断丰富，见证了人类创造力。
+          </p>
+
+          <h3>当代价值</h3>
+          <p>
+            太极拳在中国得到广泛认知和实践，在促进当代人身心健康、和谐共处方面依然发挥着重要作用，为相关社区和群体提供认同感和持续感。
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

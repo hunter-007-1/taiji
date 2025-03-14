@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>起源和发展</title>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --accent-color: #3498db;
+        --text-color: #333;
+      }
+
+      body {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      body::after {
+        content: "";
+        background: url("https://img.tukuppt.com/ad_preview/01/15/74/61a814f1c1939.jpg!/fw/780")
+          center/cover no-repeat fixed;
+        opacity: 0.3; /* 可按需调整透明度 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 确保背景在内容下方 */
+      }
+
+      body {
+        font-family: "Segoe UI", "微软雅黑", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: rotate(360deg);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      nav {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 64px;
+        z-index: 99;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .nav-links a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-color);
+        background: rgba(52, 152, 219, 0.1);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-color);
+        transition: width 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .content {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        object-position: center 30%;
+        transition: transform 0.3s ease;
+      }
+
+      .hero-image:hover {
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 0 1rem;
+        }
+
+        .hero-image {
+          height: 300px;
+        }
+
+        .logo {
+          display: none;
+        }
+      }
+      .content-section {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .history-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .highlight {
+        color: var(--accent-color);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://wimg.588ku.com/gif/21/09/01/a941b5685138b66c0f9e7fa9d7fa1a4d.gif"
+        alt="太极标志"
+        class="logo"
+      />
+      <h1 style="text-align: center; flex: 1">太极文化传承</h1>
+    </header>
+
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="overview.html">概述</a>
+        <a href="origin.html" class="active">起源和发展</a>
+        <a href="chenjiagou.html">陈家沟</a>
+        <a href="value.html">文化价值</a>
+        <a href="effect.html">功效与作用</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="content-section">
+        <h2>起源和发展</h2>
+        <img
+          src="https://bpic.588ku.com/element_origin_min_pic/23/04/25/890b967c55a8493bbf031cb439eb817a.jpg"
+          alt="太极发展史"
+          class="history-image"
+        />
+
+        <article>
+          <p>
+            最早见于战国末<a href="http://www.guoxue.com/book/zhouyi/0003.htm"
+              >《易传·系辞上》</a
+            >
+
+            ，提出
+            <q>
+              <a href="https://baike.baidu.com/item/%E6%98%93%E7%BB%8F/153636"
+                >《易》</a
+              >有太极，是生两仪</q
+            >，为解释世界本原的哲学范畴。
+          </p>
+
+          <h3>历史沿革</h3>
+          <p>
+            汉至唐：学者解读多元，涉及<span class="highlight">“气”</span>
+            <span class="highlight">“本体”</span>等核心概念
+          </p>
+
+          <h3>理论发展</h3>
+          <p>
+            宋明时期：理学家（如<span class="highlight"
+              ><a href="https://baike.baidu.com/item/%E6%9C%B1%E7%86%B9/106669"
+                >朱熹
+              </a></span
+            >
+            ）以
+            <q>理</q>释太极，亦有以<span class="highlight">“气”</span>
+            <span class="highlight">“心”</span>为太极的观点
+          </p>
+
+          <h3>武术传承</h3>
+          <p>
+            明末清初：<span class="highlight">陈家沟陈王廷</span> 创太极拳，
+            以太极阴阳理念为核心，后衍生<span class="highlight">杨式</span>
+            、
+            <span class="highlight">吴式</span>等流派，兼具养生与技击功能。
+          </p>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
