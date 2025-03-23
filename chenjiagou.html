@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>陈家沟发源地</title>
+    <title>发展现状</title>
     <style>
       :root {
         --primary-color: #2c3e50;
@@ -156,7 +156,7 @@
           display: none;
         }
       }
-      /* 新增专属样式 */
+
       .content-section {
         max-width: 1200px;
         margin: 2rem auto;
@@ -166,37 +166,23 @@
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       }
 
-      .heritage-layout {
-        display: flex;
-        gap: 2rem;
-        align-items: flex-start;
-      }
-
-      .stone-monument {
-        flex: 1;
-        min-width: 300px;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      .description {
-        flex: 2;
-        line-height: 1.8;
-      }
-
       .highlight {
         color: var(--accent-color);
         font-weight: 600;
       }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
 
-      @media (max-width: 768px) {
-        .heritage-layout {
-          flex-direction: column;
-        }
-
-        .stone-monument {
-          width: 100%;
-        }
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </head>
@@ -215,7 +201,7 @@
         <a href="index.html">首页</a>
         <a href="overview.html">概述</a>
         <a href="origin.html">起源和发展</a>
-        <a href="chenjiagou.html" class="active">陈家沟</a>
+        <a href="now.html" class="active">发展现状</a>
         <a href="value.html">文化价值</a>
         <a href="effect.html">功效与作用</a>
       </div>
@@ -223,73 +209,39 @@
 
     <main class="content">
       <div class="content-section">
-        <h2>太极拳发源地 - 陈家沟</h2>
-        <div class="heritage-layout">
-          <img
-            src="https://tse3-mm.cn.bing.net/th/id/OIP-C.e0WS-DSew6_Q8TKUC4KksgHaE8?rs=1&pid=ImgDetMain"
-            alt="太极拳发源地石碑"
-            class="stone-monument"
-          />
-
-          <div class="description">
-            <p>
-              <a
-                href="https://baike.baidu.com/item/%E9%99%88%E5%AE%B6%E6%B2%9F/1285749"
-                >陈家沟</a
-              >
-              ，又称陈沟，位于河南省焦作市温县赵堡镇，地处城东5公里处的清风岭中段。
-            </p>
-
-            <h3>文化旅游区</h3>
-            <p>
-              陈家沟太极拳文化旅游区规划面积达<span class="highlight"
-                >21平方公里</span
-              >，核心景区为国家4A级旅游景区，包含：
-            </p>
-            <ul>
-              <li>太极拳纪念馆</li>
-              <li>传统武术馆</li>
-              <li>太极文化体验中心</li>
-            </ul>
-
-            <h3>武术馆风采</h3>
-            <p>
-              在享誉国内外的陈家沟武术馆，可一览当代太极拳师风采。展馆内设有：
-            </p>
-            <ul>
-              <li>太极拳名家事迹展板</li>
-              <li>历代宗师文物陈列</li>
-              <li>实时武术教学演示</li>
-            </ul>
-
-            <h3>太极大师</h3>
-            <p>著名传承人包括：</p>
-            <ul>
-              <li>
-                <a
-                  href="https://baike.baidu.com/item/%E9%99%88%E5%B0%8F%E6%97%BA/1231796"
-                  >陈小旺</a
-                >（多次全国太极拳冠军）
-              </li>
-              <li>
-                <a
-                  href="https://baike.baidu.com/item/%E9%99%88%E6%AD%A3%E9%9B%B7?fromModule=lemma_search-box"
-                  >陈正雷</a
-                >（全国武术十大名师）
-              </li>
-              <li>
-                <a
-                  href="https://baike.baidu.com/item/%E7%8E%8B%E8%A5%BF%E5%AE%89/1231490"
-                  >王西安</a
-                >、<a
-                  href="https://baike.baidu.com/item/%E6%9C%B1%E5%A4%A9%E6%89%8D/1694111"
-                  >朱天才</a
-                >（"四大金钢"成员）
-              </li>
-            </ul>
-          </div>
+        <h2>别急有太极</h2>
+        <div class="video-container">
+          <video controls>
+            <source
+              src="https://file.digitaling.com/eImg/uvideos/2024/0823/1724387809843955.mp4"
+              type="video/mp4"
+            />
+            您的浏览器不支持 video 标签。
+          </video>
         </div>
+        <h2>AR互动屏学太极</h2>
+        <img
+          src="https://pics3.baidu.com/feed/e850352ac65c1038c058dbc2553a5414b07e89bb.jpeg@f_auto?token=405b7a55aef5ce94648639bc9eac467a&s=A0937F975E717A9E1FBCC4CE030030B3"
+          alt="AR互动屏学太极"
+          class="hero-image"
+        />
+
+        <p>
+          通过AR技术实现太极二十四式教学，由专业老师录制标准化视频支持人脸识别或微信扫码登录，提供分段教学（上/中/下）AI实时动作捕捉，对比用户动作与标准姿势并给出评分配备屏幕镜像功能，用户可同步观察自身动作市民反响体验者反馈新颖实用，尤其适合初学者。市民称赞绿道智慧化升级。
+        </p>
+
+        <h2>“你好，太极拳”圈粉</h2>
+        <img
+          src="https://imagepphcloud.thepaper.cn/pph/image/318/567/663.jpg"
+          alt="‘你好，太极拳’圈粉"
+          class="hero-image"
+        />
+
+        <p>
+          活动现场，姜继鼎介绍了太极拳“年轻化、时尚化、数字化、国际化”的探索和实践。他指出，近年来，在中国非遗保护协会的领导下，太极拳专委会联合大学、科研机构、焦作市和温县政府、太极拳各社区等，聚焦推动组建太极拳一流学科、构建太极拳公共品牌体系、与Keep平台合作上线太极拳课程等，着力推动太极拳年轻化、时尚化、数字化、国际化发展，取得显著成效。其中，与Keep合作推出的塑形、燃脂、激活、助眠4个课程，受到广泛好评和追捧。
+        </p>
       </div>
     </main>
   </body>
+</html>
 </html>
