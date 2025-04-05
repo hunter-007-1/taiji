@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>起源和发展</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap"
@@ -90,16 +90,16 @@
       }
 
       .nav-links a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    position: relative;
-    font-family: "Zhi Mang Xing", sans-serif; /* 应用书法字体 */
-    font-size: 1.5rem; /* 增大字体大小 */
-}
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        position: relative;
+        font-family: "Zhi Mang Xing", sans-serif; /* 应用书法字体 */
+        font-size: 1.5rem; /* 增大字体大小 */
+      }
 
       .nav-links a:hover {
         color: var(--accent-color);
@@ -200,6 +200,126 @@
           width: 100%;
         }
       }
+
+      /* 轮播图样式 */
+      .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: 20px 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .mySlides img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      /* 太极博物馆图片并排显示样式 */
+      .museum-gallery {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin: 20px 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .museum-gallery-item {
+        flex: 1;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .museum-gallery-item:hover {
+        transform: scale(1.03);
+      }
+
+      .museum-gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .museum-gallery {
+          flex-direction: column;
+        }
+
+        .museum-gallery-item img {
+          height: 200px;
+        }
+      }
+
+      /* 前后按钮 */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* 指示点 */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: var(--accent-color);
+      }
+
+      /* 淡入淡出动画 */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
@@ -217,9 +337,10 @@
         <a href="index.html">首页</a>
         <a href="overview.html">概述</a>
         <a href="origin.html" class="active">起源和发展</a>
-        <a href="chenjiagou.html">发展现状</a>
+        <a href="now.html">发展现状</a>
         <a href="value.html">文化价值</a>
         <a href="effect.html">功效与作用</a>
+        <a href="internation.html">国际交流</a>
       </div>
     </nav>
 
@@ -271,11 +392,40 @@
             、
             <span class="highlight">吴式</span>等流派，兼具养生与技击功能。
           </p>
-          <img
-            src="https://tse3-mm.cn.bing.net/th/id/OIP-C.e0WS-DSew6_Q8TKUC4KksgHaE8?rs=1&pid=ImgDetMain"
-            alt="太极拳发源地陈家沟"
-            class="stone-monument"
-          />
+          <!-- 轮播图容器 -->
+          <div class="slideshow-container">
+            <!-- 轮播图片 -->
+            <div class="mySlides fade">
+              <img
+                src="https://tse3-mm.cn.bing.net/th/id/OIP-C.e0WS-DSew6_Q8TKUC4KksgHaE8?rs=1&pid=ImgDetMain"
+                alt="太极拳发源地陈家沟"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="图片/chenjiagou1.jpg"
+                alt="陈家沟景色1"
+                style="width: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <img
+                src="图片/chenjiagou2.jpg"
+                alt="陈家沟景色2"
+                style="width: 100%"
+              />
+            </div>
+
+            <!-- 前后按钮 -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <!-- 轮播指示点 -->
+
           <h3>太极拳发源地</h3>
           <div class="description">
             <p>
@@ -331,7 +481,158 @@
             </ul>
           </div>
         </article>
+
+        <!-- 太极博物馆部分 -->
+        <h2>太极博物馆</h2>
+        <article>
+          <p>
+            太极博物馆是展示太极文化历史与发展的重要场所，收藏了大量珍贵的太极拳历史文物、文献资料和影像记录。博物馆不仅展示了太极拳的发展历程，还通过互动展览让游客亲身体验太极文化的魅力。作为太极文化传承与推广的重要基地，博物馆定期举办各类文化交流活动，吸引了世界各地的太极爱好者前来参观学习。
+          </p>
+          <!-- 太极博物馆图片画廊 -->
+          <div class="museum-gallery">
+            <div class="museum-gallery-item">
+              <img src="图片/bowuguan1.jpg" alt="太极博物馆展览1" />
+            </div>
+
+            <div class="museum-gallery-item">
+              <img src="图片/bowuguan2.jpg" alt="太极博物馆展览2" />
+            </div>
+
+            <div class="museum-gallery-item">
+              <img src="图片/bowuguan3.jpg" alt="太极博物馆展览3" />
+            </div>
+          </div>
+
+          <h3>博物馆特色展区</h3>
+          <div class="description">
+            <ul>
+              <li>太极历史文化展区 - 展示太极拳从创立到发展的完整历程</li>
+              <li>名家名派展区 - 介绍各流派代表人物及其特色技艺</li>
+              <li>互动体验区 - 提供太极拳基本动作学习和虚拟对练体验</li>
+              <li>国际交流展区 - 展示太极拳在世界各地的传播与影响</li>
+            </ul>
+
+            <h4>参观信息</h4>
+            <p>
+              博物馆全年开放，提供专业讲解服务和定期举办太极文化讲座。每周末有太极拳表演活动，游客可以近距离欣赏太极拳的精妙技艺。
+            </p>
+          </div>
+        </article>
+
+        <!-- 太极学校部分 -->
+        <h2>太极学校</h2>
+        <article>
+          <p>
+            太极学校是传承和发扬太极文化的重要基地，致力于培养专业的太极传承人和爱好者。学校秉承"传统与创新并重"的教学理念，开设多元化的课程体系，为学员提供系统的太极文化学习和实践机会。
+          </p>
+
+          <!-- 太极学校图片画廊 -->
+          <div class="museum-gallery school-gallery">
+            <div class="museum-gallery-item">
+              <img src="图片/xuexiao1.jpg" alt="太极学校环境1" />
+            </div>
+
+            <div class="museum-gallery-item">
+              <img src="图片/xuexiao2.jpg" alt="太极学校环境2" />
+            </div>
+
+            <div class="museum-gallery-item">
+              <img src="图片/xuexiao3jpg.jpg" alt="太极学校环境3" />
+            </div>
+          </div>
+
+          <h3>特色课程</h3>
+          <div class="description">
+            <ul>
+              <li>传统太极拳基础教学 - 系统学习太极拳的基本动作和要领</li>
+              <li>太极文化理论课程 - 深入了解太极的哲学思想和文化内涵</li>
+              <li>太极推手实践课 - 掌握太极拳的实战应用技巧</li>
+              <li>养生太极培训班 - 适合追求健康养生的学员</li>
+            </ul>
+
+            <h4>师资力量</h4>
+            <p>
+              学校汇聚了众多太极名家和资深教练，他们不仅具备深厚的太极功底，还拥有丰富的教学经验。教师团队包括国家级太极拳教练、传统武术世家传人以及具有专业体育教育背景的青年教师。
+            </p>
+
+            <h4>教学特色</h4>
+            <ul>
+              <li>小班制教学，确保每位学员得到充分指导</li>
+              <li>因材施教，根据学员个人特点制定学习计划</li>
+              <li>理论与实践相结合，全面提升学习效果</li>
+              <li>定期举办交流活动，增进学员之间的互动</li>
+            </ul>
+
+            <h4>招生信息</h4>
+            <p>
+              学校全年招生，设有短期培训班和长期进修班，欢迎各年龄段的太极爱好者报名参加。另外，学校还为企事业单位提供团体培训服务，可根据需求定制专属课程。
+            </p>
+          </div>
+        </article>
       </div>
     </main>
+    <script>
+      // 起源和发展轮播图脚本
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // 自动轮播
+      let slideInterval = setInterval(function () {
+        plusSlides(1);
+      }, 5000); // 每5秒切换一次
+
+      // 前后按钮控制
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // 指示点控制
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        // 循环显示
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+
+        // 隐藏所有幻灯片
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+
+        // 移除所有指示点的active类
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // 显示当前幻灯片和激活当前指示点
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+        // 当用户交互时重置自动播放计时器
+        clearInterval(slideInterval);
+        slideInterval = setInterval(function () {
+          plusSlides(1);
+        }, 5000);
+      }
+
+      // 太极博物馆图片已改为并排显示，不需要轮播脚本
+
+      // 页面加载时显示第一张幻灯片
+      document.addEventListener("DOMContentLoaded", function () {
+        showSlides(slideIndex);
+        // 博物馆图片已改为并排显示，不需要初始化轮播
+      });
+    </script>
   </body>
 </html>
+
