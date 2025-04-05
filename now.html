@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>发展现状</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --accent-color: #3498db;
+        --text-color: #333;
+      }
+
+      body {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      body::after {
+        content: "";
+        background: url("https://img.tukuppt.com/ad_preview/01/15/74/61a814f1c1939.jpg!/fw/780")
+          center/cover no-repeat fixed;
+        opacity: 0.3; /* 可按需调整透明度 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* 确保背景在内容下方 */
+      }
+
+      body {
+        font-family: "Segoe UI", "微软雅黑", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+      }
+
+      header {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: rotate(360deg);
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      nav {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 64px;
+        z-index: 99;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+.nav-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-family: "Zhi Mang Xing", sans-serif; /* 应用书法字体 */
+    font-size: 1.5rem; /* 增大字体大小 */
+}
+      .nav-links a:hover {
+        color: var(--accent-color);
+        background: rgba(52, 152, 219, 0.1);
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent-color);
+        transition: width 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .content {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 500px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        object-position: center 30%;
+        transition: transform 0.3s ease;
+      }
+
+      .hero-image:hover {
+        transform: scale(1.02);
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 1rem;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .nav-links {
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 0 1rem;
+        }
+
+        .hero-image {
+          height: 300px;
+        }
+
+        .logo {
+          display: none;
+        }
+      }
+
+      .content-section {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .highlight {
+        color: var(--accent-color);
+        font-weight: 600;
+      }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://wimg.588ku.com/gif/21/09/01/a941b5685138b66c0f9e7fa9d7fa1a4d.gif"
+        alt="太极标志"
+        class="logo"
+      />
+      <h1 style="text-align: center; flex: 1">走入乾坤之境—太极</h1>
+    </header>
+
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">首页</a>
+        <a href="overview.html">概述</a>
+        <a href="origin.html">起源和发展</a>
+        <a href="now.html" class="active">发展现状</a>
+        <a href="value.html">文化价值</a>
+        <a href="effect.html">功效与作用</a>
+         <a href="internation.html">国际交流</a>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="content-section">
+       <h2>别急有太极</h2>
+<h2>别急有太极</h2>
+<div class="video-container">
+  <video controls>
+    <source src="don't hurry.mp4" type="video/mp4"/>
+    您的浏览器不支持 video 标签。
+  </video>
+</div>
+        <h2>AR互动屏学太极</h2>
+        <img
+          src="artaichi.webp"
+          alt="AR互动屏学太极"
+          class="hero-image"
+        />
+
+        <p>
+          通过AR技术实现太极二十四式教学，由专业老师录制标准化视频支持人脸识别或微信扫码登录，提供分段教学（上/中/下）AI实时动作捕捉，对比用户动作与标准姿势并给出评分配备屏幕镜像功能，用户可同步观察自身动作市民反响体验者反馈新颖实用，尤其适合初学者。市民称赞绿道智慧化升级。
+        </p>
+
+        <h2>“你好，太极拳”圈粉</h2>
+        <img
+          src="hello.jpg"
+          alt="‘你好，太极拳’圈粉"
+          class="hero-image"
+        />
+
+        <p>
+          活动现场，姜继鼎介绍了太极拳“年轻化、时尚化、数字化、国际化”的探索和实践。他指出，近年来，在中国非遗保护协会的领导下，太极拳专委会联合大学、科研机构、焦作市和温县政府、太极拳各社区等，聚焦推动组建太极拳一流学科、构建太极拳公共品牌体系、与Keep平台合作上线太极拳课程等，着力推动太极拳年轻化、时尚化、数字化、国际化发展，取得显著成效。其中，与Keep合作推出的塑形、燃脂、激活、助眠4个课程，受到广泛好评和追捧。
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
+</html>
